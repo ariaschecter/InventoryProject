@@ -3,14 +3,14 @@ package com.week6;
 import java.util.*;
 
 public class Product {
-    static int maxSize = -1;
-    static Scanner input = new Scanner(System.in);
-    static String[] NamaProduk;
-    static int[] JmlProduk;
-    static int[] Price;
-    static int[] NoCode;
+    int maxSize = -1;
+    Scanner input = new Scanner(System.in);
+    String[] NamaProduk;
+    int[] JmlProduk;
+    int[] Price;
+    int[] NoCode;
 
-    public static void setInventory() {
+    public void setInventory() {
 
         try {
             System.out.print("Masukkan jumlah produk : ");
@@ -31,11 +31,11 @@ public class Product {
         }
     }
 
-    public static void getInventory(){
+    public void getInventory(){
         OpenData(maxSize);
     }
 
-    public static void NamaProduk(int batas) {
+    public void NamaProduk(int batas) {
 
         String buffer;
          NamaProduk = new String[batas];
@@ -52,7 +52,7 @@ public class Product {
         }
     }
 
-    public static void JmlProduk(int batas) {
+    public void JmlProduk(int batas) {
 
         int buffer;
         JmlProduk = new int[batas];
@@ -85,7 +85,7 @@ public class Product {
         }
     }
 
-    public static void HargaProduk(int batas) {
+    public void HargaProduk(int batas) {
         int buffer;
         Price = new int[batas];
         try {
@@ -117,7 +117,7 @@ public class Product {
         }
     }
 
-    public static void NoProduk(int batas) {
+    public void NoProduk(int batas) {
 
         int buffer;
         NoCode = new int[batas];
@@ -151,7 +151,7 @@ public class Product {
         }
     }
 
-    public static void OpenData(int batas){
+    public void OpenData(int batas){
         for (int i = 0; i < batas; i++) {
             boolean Status = true;
             if (JmlProduk[i] == 0) {
