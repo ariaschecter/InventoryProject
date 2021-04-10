@@ -1,4 +1,4 @@
-package com.week6;
+package JF6Project;
 
 import java.lang.*;
 
